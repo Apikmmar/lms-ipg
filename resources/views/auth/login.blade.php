@@ -3,7 +3,7 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <div class="flex items-center justify-center min-h-screen">
-        <form method="POST" action="{{ route('login') }}" class="p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105 w-full max-w-md">
+        <form method="POST" action="{{ route('login') }}" class="p-6 bg-white shadow-lg transition-transform transform hover:scale-105 w-full max-w-md">
             @csrf
 
             <div class="flex items-center mb-6 ml-4">

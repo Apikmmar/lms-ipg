@@ -14,7 +14,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
 
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>IPGKI-edu Gather</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

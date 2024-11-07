@@ -1,3 +1,4 @@
+
 <style>
     /* Sidebar Styling */
     .sidebar {
@@ -76,7 +77,7 @@
         display: block;
     }
 </style>
-
+@can('lecturer')
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="row" style="background-image:url('asset/photo/lecturerbackground.png');">
@@ -103,87 +104,11 @@
         <li><a href="#"><i>📊</i> Report</a></li>
     </ul>
 </div>
+@endcan
 
-<!-- <style>
-    /* Sidebar Styling */
-    .sidebar {
-        width: 200px;
-        height: 100vh;
-        background-color: #ffffff;
-        position: fixed;
-        top: 0;
-        /* Ensures it's always at the top */
-        padding-top: 20px;
-        font-family: Arial, sans-serif;
-        z-index: 10;
-        /* Keeps sidebar above content */
-    }
-
-    .sidebar h2 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 20px;
-    }
-
-    .sidebar img {
-        width: 100%;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .sidebar .menu-item {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .sidebar .menu-item a {
-        display: flex;
-        align-items: center;
-        padding: 10px 20px;
-        color: #333;
-        text-decoration: none;
-        font-size: 16px;
-        transition: 0.3s;
-    }
-
-    .sidebar .menu-item a:hover {
-        background-color: #ddd;
-    }
-
-    .sidebar .menu-item a i {
-        margin-right: 10px;
-    }
-
-    .sidebar .menu-item .dropdown {
-        cursor: pointer;
-        position: relative;
-    }
-
-    .sidebar .menu-item .dropdown-content {
-        display: none;
-        padding-left: 20px;
-        background-color: #ffffff;
-        border-left: 2px solid #eaeaea;
-    }
-
-    .sidebar .menu-item .dropdown-content a {
-        display: block;
-        padding: 8px 0;
-        font-size: 14px;
-        color: #333;
-        text-decoration: none;
-    }
-
-    .sidebar .menu-item .dropdown-content a:hover {
-        background-color: #f0f0f0;
-    }
-
-    .sidebar .menu-item .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style> -->
+@can('student')
 <!-- Sidebar -->
-<!-- <div class="sidebar">
+<div class="sidebar">
     <div class="row" style="background-image:url('asset/photo/studentbackground.jpg');">
         <p style="margin-left: 20px; margin-top: 100px;">TSLB1104<br><br>Grammar in Context</p>
     </div>
@@ -206,4 +131,20 @@
             </div>
         </li>
     </ul>
-</div> -->
+</div>
+@endcan
+
+@can (abilities: 'administrator')
+<!-- Sidebar Admin -->
+<div class="sidebar">
+    <div class="row" style="background-image:url('asset/photo/lecturerbackground.png');">
+        <p style="margin-left: 20px; margin-top: 100px;">Faris<br><br>AD123</p>
+    </div>
+
+    <ul class="menu-item">
+        <li><a href="#"><i>👨‍🎓</i> Lecturer</a></li>
+        <li><a href="#"><i>🎓</i> Student</a></li>
+        <li><a href="#"><i>📘</i> Subject</a></li>
+    </ul>
+</div>
+@endcan

@@ -32,5 +32,9 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('administrator', function($user) {
             return $user->hasRole('Administrator');
         });
+
+        Gate::define('lect-admin', function($user) {
+            return $user->can('lecturer') || $user->can('administrator');
+        });
     }
 }

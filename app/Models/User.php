@@ -56,10 +56,10 @@ class User extends Authenticatable
     }
 
     public function role(): HasOne {
-        return $this->hasOne(Role::class);
+        return $this->hasOne(Role::class, 'id', 'role_id');
     }
 
     public function hasRole($roleName) {
-        return $this->role()->where('name', $roleName)->exists();
+        return $this->role && $this->role->name === $roleName;
     }
 }
