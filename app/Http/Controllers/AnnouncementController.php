@@ -18,4 +18,7 @@ class AnnouncementController extends Controller
 
     public function deleteAnnouncement() {
     }
+    public function viewAnnouncementApproval() {
+        return view('ManageAnnouncement.announcementApproval');
+    }
 }

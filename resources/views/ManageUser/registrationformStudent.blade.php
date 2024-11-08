@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title'=> 'REGISTRATION FORM -Lecturer'])
+@extends('layouts.master', ['title'=> 'REGISTRATION FORM -Student'])
 
 @section('content')
 
@@ -90,23 +90,13 @@
         <br>
         <hr>
 
-        <!-- Title: subject and unit assigning -->
+        <!-- Title: unit and subject enrollment -->
         <div class="mb-4">
-            <h4 class="mt-4">Subject-Unit Enrollment</h4>
+            <h4 class="mt-4">Unit-Subject Enrollment</h4>
         </div>
 
-        <!-- Subject Code and Unit -->
+        <!-- Subject Code and Unit  -->
         <div class="mb-4 row">
-            <label for="input_subjectCode" class="col-sm-2 col-form-label">Subject Code</label>
-            <div class="col-sm-4">
-                <select class="form-control" id="input_subjectCode" name="subjectCode">
-                    <option value="" disabled selected>Select Subject Code</option>
-                    <option value="MAT101">MAT101 - Mathematics</option>
-                    <option value="SCI201">SCI201 - Science</option>
-                    <option value="ENG301">ENG301 - English</option>
-                </select>
-            </div>
-
             <label for="input_unitName" class="col-sm-2 col-form-label">Unit</label>
             <div class="col-sm-4">
                 <select class="form-control" id="input_unitName" name="unitName">
@@ -117,6 +107,15 @@
                     <option value="Unit B">B1</option>
                     <option value="Unit B">B2</option>
                     <option value="Unit B">B3</option>
+                </select>
+            </div>
+            <label for="input_subjectCode" class="col-sm-2 col-form-label">Subject Code</label>
+            <div class="col-sm-4">
+                <select class="form-control" id="input_subjectCode" name="subjectCode">
+                    <option value="" disabled selected>Select Subject Code</option>
+                    <option value="MAT101">MAT101 - Mathematics</option>
+                    <option value="SCI201">SCI201 - Science</option>
+                    <option value="ENG301">ENG301 - English</option>
                 </select>
             </div>
         </div>

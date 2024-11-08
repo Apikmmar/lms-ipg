@@ -51,4 +51,12 @@ class RegisteredUserController extends Controller
     public function viewregistrationformLecturer() {
         return view('ManageUser.registrationformLecturer');
     }
+
+    public function viewregistrationformStudent() {
+        return view('ManageUser.registrationformStudent');
+    }
+
+    public function viewregistrationformSubject() {
+        return view('ManageUser.registrationformSubject');
+    }
 }

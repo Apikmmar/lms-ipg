@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title'=> 'REGISTRATION FORM -Lecturer'])
+@extends('layouts.master', ['title'=> 'REGISTRATION FORM'])
 
 @section('content')
 

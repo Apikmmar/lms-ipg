@@ -46,7 +46,7 @@
     @include('layouts.partials.navbar')
 
     <div class="title-apps" style="background-color:#A5D4E9">
-        <h6 class="fw-bold text-dark" style="font-size: 2rem; margin-left: 20px;">{{ $title }}</h6>
+        <h6 class="text-dark" style="font-size: 2rem; margin-left: 20px;">{{ $title }}</h6>
     </div>
 
     <div class="container content-apps">

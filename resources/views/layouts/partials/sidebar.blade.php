@@ -142,9 +142,9 @@
     </div>
 
     <ul class="menu-item">
-        <li><a href="#"><i>👨‍🎓</i> Lecturer</a></li>
-        <li><a href="#"><i>🎓</i> Student</a></li>
-        <li><a href="#"><i>📘</i> Subject</a></li>
+        <li><a href="{{ route('viewregistrationformLecturer')}}"><i>👨‍🎓</i> Lecturer</a></li>
+        <li><a href="{{ route('viewregistrationformStudent')}}"><i>🎓</i> Student</a></li>
+        <li><a href="{{ route('viewregistrationformSubject')}}"><i>📘</i> Subject</a></li>
     </ul>
 </div>
 @endcan

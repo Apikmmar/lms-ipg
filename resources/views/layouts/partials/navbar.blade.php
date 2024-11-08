@@ -10,7 +10,7 @@
         </div>
         <div class="d-flex align-items-center">
             <!-- Home Icon and Text -->
-            <a href="/profile" class="text-dark me-3 d-flex align-items-center text-decoration-none" title="Home">
+            <a href="{{ route('dashboard') }}" class="text-dark me-3 d-flex align-items-center text-decoration-none" title="Home">
                 <i class="bi bi-house-door me-2"></i> <!-- Home icon -->
                 <span>Home</span>
             </a>
